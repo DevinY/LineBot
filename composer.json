@@ -1,0 +1,38 @@
+{
+    "name": "deviny/linebot",
+    "description": "基於OW系統在Laravel上LineBot套件。",
+    "keywords": ["linebot", "ow","laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Devin Yang",
+            "email": "devin@ccc.tc"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/deviny/linebot.git"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+	"laravel/framework": "^12.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "livewire/livewire": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deviny\\LineBot\\":"src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deviny\\LineBot\\ServiceProvider"
+            ]
+        }
+    }
+}
